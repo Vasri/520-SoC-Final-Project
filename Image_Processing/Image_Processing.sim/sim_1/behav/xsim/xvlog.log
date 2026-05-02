@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dyang/Desktop/CSUN/ECE520/Image_Processing/Image_Processing.srcs/sources_1/new/conv_engine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_engine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dyang/Desktop/CSUN/ECE520/Image_Processing/Image_Processing.srcs/sources_1/new/image_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dyang/Desktop/CSUN/ECE520/Image_Processing/Image_Processing.srcs/sources_1/new/line_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module line_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dyang/Desktop/CSUN/ECE520/Image_Processing/Image_Processing.srcs/sim_1/new/tb_image_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_image_filter

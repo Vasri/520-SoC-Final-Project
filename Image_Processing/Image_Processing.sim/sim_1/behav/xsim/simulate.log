@@ -1,0 +1,9 @@
+Time resolution is 1 ps
+[tb] Image: 200 x 150  (30000 pixels)
+[tb] Loaded 'image_in.hex'
+[tb] Filter: INVERT  (passthrough, computed in TB)
+[tb] Streaming pixels ...
+[tb] Stream complete.  Convolution outputs captured: 0
+[tb] Wrote 'image_out.hex'
+[tb] Done.
+$finish called at time : 125 ns : File "C:/Users/dyang/Desktop/CSUN/ECE520/Image_Processing/Image_Processing.srcs/sim_1/new/tb_image_filter.v" Line 302

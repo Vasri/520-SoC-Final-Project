@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Apr 30 20:43:39 2026
+# Process ID: 17544
+# Current directory: C:/Users/dyang/Desktop/CSUN/ECE520/Image_Processing/Image_Processing.runs/impl_1
+# Command line: vivado.exe -log image_filter.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source image_filter.tcl -notrace
+# Log file: C:/Users/dyang/Desktop/CSUN/ECE520/Image_Processing/Image_Processing.runs/impl_1/image_filter.vdi
+# Journal file: C:/Users/dyang/Desktop/CSUN/ECE520/Image_Processing/Image_Processing.runs/impl_1\vivado.jou
+# Running On: DESKTOP-4PRFA6E, OS: Windows, CPU Frequency: 2994 MHz, CPU Physical cores: 12, Host memory: 7967 MB
+#-----------------------------------------------------------
+source image_filter.tcl -notrace

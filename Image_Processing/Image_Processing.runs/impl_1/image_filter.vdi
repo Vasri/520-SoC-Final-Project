@@ -1,0 +1,449 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Apr 30 20:43:39 2026
+# Process ID: 17544
+# Current directory: C:/Users/dyang/Desktop/CSUN/ECE520/Image_Processing/Image_Processing.runs/impl_1
+# Command line: vivado.exe -log image_filter.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source image_filter.tcl -notrace
+# Log file: C:/Users/dyang/Desktop/CSUN/ECE520/Image_Processing/Image_Processing.runs/impl_1/image_filter.vdi
+# Journal file: C:/Users/dyang/Desktop/CSUN/ECE520/Image_Processing/Image_Processing.runs/impl_1\vivado.jou
+# Running On: DESKTOP-4PRFA6E, OS: Windows, CPU Frequency: 2994 MHz, CPU Physical cores: 12, Host memory: 7967 MB
+#-----------------------------------------------------------
+source image_filter.tcl -notrace
+create_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 427.953 ; gain = 166.012
+Command: link_design -top image_filter -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.345 . Memory (MB): peak = 858.074 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2240 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'image_filter' is not ideal for floorplanning, since the cellview 'line_buffer' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 979.832 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+6 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 979.832 ; gain = 543.898
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1023.625 ; gain = 43.793
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 165a1143e
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1558.297 ; gain = 534.672
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 165a1143e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1897.520 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 10798bca8
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1897.520 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: bd315a05
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1897.520 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: bd315a05
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1897.520 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 931fe742
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1897.520 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 931fe742
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1897.520 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 1897.520 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 931fe742
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1897.520 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 931fe742
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1897.520 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 931fe742
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1897.520 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1897.520 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 931fe742
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1897.520 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1897.520 ; gain = 917.688
+INFO: [runtcl-4] Executing : report_drc -file image_filter_drc_opted.rpt -pb image_filter_drc_opted.pb -rpx image_filter_drc_opted.rpx
+Command: report_drc -file image_filter_drc_opted.rpt -pb image_filter_drc_opted.pb -rpx image_filter_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/dyang/Desktop/CSUN/ECE520/Image_Processing/Image_Processing.runs/impl_1/image_filter_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:50 ; elapsed = 00:00:49 . Memory (MB): peak = 1897.520 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/dyang/Desktop/CSUN/ECE520/Image_Processing/Image_Processing.runs/impl_1/image_filter_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1897.520 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 12d99e62
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1897.520 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1897.520 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (115) is greater than number of available sites (100).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 100 sites available on device, but needs 115 sites.
+	Term: kernel[0]
+	Term: kernel[1]
+	Term: kernel[2]
+	Term: kernel[3]
+	Term: kernel[4]
+	Term: kernel[5]
+	Term: kernel[6]
+	Term: kernel[7]
+	Term: kernel[8]
+	Term: kernel[9]
+	Term: kernel[10]
+	Term: kernel[11]
+	Term: kernel[12]
+	Term: kernel[13]
+	Term: kernel[14]
+	Term: kernel[15]
+	Term: kernel[16]
+	Term: kernel[17]
+	Term: kernel[18]
+	Term: kernel[19]
+	Term: kernel[20]
+	Term: kernel[21]
+	Term: kernel[22]
+	Term: kernel[23]
+	Term: kernel[24]
+	Term: kernel[25]
+	Term: kernel[26]
+	Term: kernel[27]
+	Term: kernel[28]
+	Term: kernel[29]
+	Term: kernel[30]
+	Term: kernel[31]
+	Term: kernel[32]
+	Term: kernel[33]
+	Term: kernel[34]
+	Term: kernel[35]
+	Term: kernel[36]
+	Term: kernel[37]
+	Term: kernel[38]
+	Term: kernel[39]
+	Term: kernel[40]
+	Term: kernel[41]
+	Term: kernel[42]
+	Term: kernel[43]
+	Term: kernel[44]
+	Term: kernel[45]
+	Term: kernel[46]
+	Term: kernel[47]
+	Term: kernel[48]
+	Term: kernel[49]
+	Term: kernel[50]
+	Term: kernel[51]
+	Term: kernel[52]
+	Term: kernel[53]
+	Term: kernel[54]
+	Term: kernel[55]
+	Term: kernel[56]
+	Term: kernel[57]
+	Term: kernel[58]
+	Term: kernel[59]
+	Term: kernel[60]
+	Term: kernel[61]
+	Term: kernel[62]
+	Term: kernel[63]
+	Term: kernel[64]
+	Term: kernel[65]
+	Term: kernel[66]
+	Term: kernel[67]
+	Term: kernel[68]
+	Term: kernel[69]
+	Term: kernel[70]
+	Term: kernel[71]
+	Term: img_width[0]
+	Term: img_width[1]
+	Term: img_width[2]
+	Term: img_width[3]
+	Term: img_width[4]
+	Term: img_width[5]
+	Term: img_width[6]
+	Term: img_width[7]
+	Term: img_width[8]
+	Term: img_width[9]
+	Term: img_width[10]
+	Term: img_width[11]
+	Term: img_width[12]
+	Term: img_width[13]
+	Term: img_width[14]
+	Term: img_width[15]
+	Term: bias[0]
+	Term: bias[1]
+	Term: bias[2]
+	Term: bias[3]
+	Term: bias[4]
+	Term: bias[5]
+	Term: bias[6]
+	Term: bias[7]
+	Term: bias[8]
+	Term: pix_in[0]
+	Term: pix_in[1]
+	Term: pix_in[2]
+	Term: pix_in[3]
+	Term: pix_in[4]
+	Term: pix_in[5]
+	Term: pix_in[6]
+	Term: pix_in[7]
+	Term: scale[0]
+	Term: scale[1]
+	Term: scale[2]
+	Term: scale[3]
+	Term: scale[4]
+	Term: scale[5]
+	Term: scale[6]
+	Term: scale[7]
+	Term: pix_wr
+	Term: rst_n
+
+
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (125) is greater than number of available sites (100).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 100 sites available on device, but needs 115 sites.
+	Term: kernel[0]
+	Term: kernel[1]
+	Term: kernel[2]
+	Term: kernel[3]
+	Term: kernel[4]
+	Term: kernel[5]
+	Term: kernel[6]
+	Term: kernel[7]
+	Term: kernel[8]
+	Term: kernel[9]
+	Term: kernel[10]
+	Term: kernel[11]
+	Term: kernel[12]
+	Term: kernel[13]
+	Term: kernel[14]
+	Term: kernel[15]
+	Term: kernel[16]
+	Term: kernel[17]
+	Term: kernel[18]
+	Term: kernel[19]
+	Term: kernel[20]
+	Term: kernel[21]
+	Term: kernel[22]
+	Term: kernel[23]
+	Term: kernel[24]
+	Term: kernel[25]
+	Term: kernel[26]
+	Term: kernel[27]
+	Term: kernel[28]
+	Term: kernel[29]
+	Term: kernel[30]
+	Term: kernel[31]
+	Term: kernel[32]
+	Term: kernel[33]
+	Term: kernel[34]
+	Term: kernel[35]
+	Term: kernel[36]
+	Term: kernel[37]
+	Term: kernel[38]
+	Term: kernel[39]
+	Term: kernel[40]
+	Term: kernel[41]
+	Term: kernel[42]
+	Term: kernel[43]
+	Term: kernel[44]
+	Term: kernel[45]
+	Term: kernel[46]
+	Term: kernel[47]
+	Term: kernel[48]
+	Term: kernel[49]
+	Term: kernel[50]
+	Term: kernel[51]
+	Term: kernel[52]
+	Term: kernel[53]
+	Term: kernel[54]
+	Term: kernel[55]
+	Term: kernel[56]
+	Term: kernel[57]
+	Term: kernel[58]
+	Term: kernel[59]
+	Term: kernel[60]
+	Term: kernel[61]
+	Term: kernel[62]
+	Term: kernel[63]
+	Term: kernel[64]
+	Term: kernel[65]
+	Term: kernel[66]
+	Term: kernel[67]
+	Term: kernel[68]
+	Term: kernel[69]
+	Term: kernel[70]
+	Term: kernel[71]
+	Term: img_width[0]
+	Term: img_width[1]
+	Term: img_width[2]
+	Term: img_width[3]
+	Term: img_width[4]
+	Term: img_width[5]
+	Term: img_width[6]
+	Term: img_width[7]
+	Term: img_width[8]
+	Term: img_width[9]
+	Term: img_width[10]
+	Term: img_width[11]
+	Term: img_width[12]
+	Term: img_width[13]
+	Term: img_width[14]
+	Term: img_width[15]
+	Term: bias[0]
+	Term: bias[1]
+	Term: bias[2]
+	Term: bias[3]
+	Term: bias[4]
+	Term: bias[5]
+	Term: bias[6]
+	Term: bias[7]
+	Term: bias[8]
+	Term: pix_in[0]
+	Term: pix_in[1]
+	Term: pix_in[2]
+	Term: pix_in[3]
+	Term: pix_in[4]
+	Term: pix_in[5]
+	Term: pix_in[6]
+	Term: pix_in[7]
+	Term: scale[0]
+	Term: scale[1]
+	Term: scale[2]
+	Term: scale[3]
+	Term: scale[4]
+	Term: scale[5]
+	Term: scale[6]
+	Term: scale[7]
+	Term: pix_wr
+	Term: rst_n
+
+
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 34 |    50 |     0 |                                                                        |                                          |        |        |        |     |
+| 35 |    50 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   100 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 93c78dee
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1897.520 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 93c78dee
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1897.520 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 93c78dee
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1897.520 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+40 Infos, 1 Warnings, 0 Critical Warnings and 5 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 30 20:46:28 2026...
