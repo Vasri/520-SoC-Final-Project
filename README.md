@@ -48,3 +48,8 @@ Steps:
 # Results
 ![Input_image](input.png)
 ![Output_image](output.png)
+
+# Conclusion
+In this project we designed an SoC Image Processor that includes a hardware-accelerated kernel convolution engine as well as algorithmic image processing. We used both hardware and software, implementing Canny Edge Detection and Hough Transform Algorithm in order to recognize the game state of tic-tac-toe. 
+
+This was a much more challenging project than anticipated. One difficulty that we hadn't anticipated was how difficult testing and debugging was going to be, especially since we did not have good tools to visualize what was happening in our program (in the Vitis debugger, we could see pixel-by-pixel what the program was outputting, but it isn't easy to understand what was happening to the image). We had to resort to serial output to print our intermediate/output images and use MATLAB to convert that output into a viewable image to understand what our code was doing at times. Overall, it was a very fulfilling project and we learned a lot in terms of how to create a working AXI4-Lite Peripheral and integrate it with software into a single SoC. 

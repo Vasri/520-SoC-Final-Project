@@ -1,0 +1,9 @@
+Inside the zip folder you will find:
+- /ip_repo/image_processing_axi_1_0
+- /Final_Project/
+
+The first contains the AXI IP needed for the Final_Project. 
+
+The second contains all the Vivado project files. 
+It also contains /Final_Project/Final_Project_Vitis/ which is the Vitis project directory. 
+You can launce Vitis IDE in this directory and import the project, and from there build and run the program on a Zybo Z7-10 devboard.
